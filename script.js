@@ -4,10 +4,9 @@ const navLinks = document.querySelector('.nav-links');
 
 if (menuToggle) {
     menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        menuToggle.innerHTML = navLinks.classList.contains('active') 
-            ? '<i class="fas fa-times"></i>' 
-            : '<i class="fas fa-bars"></i>';
+        const isOpen = navLinks.classList.toggle('active');
+        menuToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 }
 
@@ -16,8 +15,28 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        menuToggle.setAttribute('aria-expanded', 'false');
     });
 });
+
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinksList = document.querySelectorAll('.nav-links a');
+
+function updateActiveLink() {
+    let fromTop = window.scrollY + 80;
+    sections.forEach(section => {
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+            const id = section.getAttribute('id');
+            navLinksList.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+            });
+        }
+    });
+}
+
+window.addEventListener('scroll', updateActiveLink);
+document.addEventListener('DOMContentLoaded', updateActiveLink);
 
 // Set current year in footer
 document.getElementById('currentYear').textContent = new Date().getFullYear();
