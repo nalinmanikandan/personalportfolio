@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nalinkumar Manikandan | Portfolio</title>
+    <title>Nalinkumar Manikandan | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo"><span>Nalinkumar Manikandan</span></a>
-
-            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <a href="#" class="logo"><span>NM</span> | Nalinkumar</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
-
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,7 +24,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav> 
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -35,7 +33,7 @@
                 <h3 class="greeting">Hello, I'm</h3>
                 <h1 class="name"><span class="highlight">Nalinkumar Manikandan</span></h1>
                 <h2 class="title">Software Engineer</h2>
-                <p class="description">Backend developer with one year of hands-on experience in Java and Spring Boot, specializing in scalable system design, debugging, and problem-solving.</p>
+                <p class="description">Backend developer with hands-on expertise in Java, Spring Boot, and Angular. Specializing in scalable system design, clean APIs, and full-stack problem solving.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn primary">View My Work</a>
                     <a href="#contact" class="btn secondary">Contact Me</a>
@@ -46,7 +44,9 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/profile photo.jpeg" alt="Nalinkumar Manikandan - Software Engineer" class="profile-photo">
+                <div class="profile-frame">
+                    <img src="assets/profile photo.jpeg" alt="Nalinkumar Manikandan" class="profile-photo">
+                </div>
             </div>
         </div>
     </section>
@@ -57,123 +57,146 @@
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Get to know me.</h3>
-                    <p>I am a passionate software engineer with expertise in Java and Spring Boot. I graduated with a degree in Information Technology and have been building robust backend systems for the past year.</p>
-                    <p>My passion lies in creating efficient, scalable solutions and solving complex problems. I enjoy the process of debugging and optimizing code to deliver high-performance applications.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities. I believe in continuous learning and staying updated with the latest industry trends.</p>
+                    <h3>Full-Stack Developer & Problem Solver</h3>
+                    <p>I'm a passionate software engineer with deep experience in Java, Spring Boot, and modern frontend frameworks like Angular. I graduated in Information Technology and have been crafting robust backend systems & interactive UIs.</p>
+                    <p>I love building products that matter — from secure REST APIs to responsive Angular dashboards. My toolkit includes SQL, MongoDB, Git workflows, and testing with JUnit & Swagger.</p>
+                    <p>When I'm not coding, I explore new tech, contribute to open source, and solve real-world problems with clean architecture.</p>
                     <a href="assets/Nalinkumar Resume.pdf" class="btn primary" download><i class="fas fa-download"></i> Download CV</a>
                 </div>
                 <div class="about-stats">
-                    <div class="stat">
-                        <h3>1+</h3>
-                        <p>Years Experience</p>
+                    <div class="stat google-card"><h3>1+</h3><p>Years Experience</p></div>
+                    <div class="stat google-card"><h3>5+</h3><p>Projects Completed</p></div>
+                    <div class="stat google-card"><h3>15+</h3><p>Technologies</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Google Colors + Grouped Categories -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Tech <span>Arsenal</span></h2>
+            
+            <!-- Categorized skills grid with Google-inspired tags -->
+            <div class="skills-categories">
+                <!-- Programming & Core -->
+                <div class="skill-cat">
+                    <div class="cat-header"><i class="fas fa-code google-blue-txt"></i><h3>Language & Core</h3></div>
+                    <div class="skills-tags">
+                        <span class="skill-tag google-tag"><i class="fab fa-java"></i> Java</span>
                     </div>
-                    <div class="stat">
-                        <h3>1+</h3>
-                        <p>Projects Completed</p>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-cat">
+                    <div class="cat-header"><i class="fas fa-layer-group google-red-txt"></i><h3>Frameworks</h3></div>
+                    <div class="skills-tags">
+                        <span class="skill-tag google-tag"><i class="fas fa-leaf"></i> Spring</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-rocket"></i> Spring Boot</span>
+                        <span class="skill-tag google-tag"><i class="fab fa-angular"></i> Angular</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-vial"></i> JUnit</span>
                     </div>
-                    <div class="stat">
-                        <h3>5+</h3>
-                        <p>Technologies Learned</p>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-cat">
+                    <div class="cat-header"><i class="fas fa-database google-green-txt"></i><h3>Databases</h3></div>
+                    <div class="skills-tags">
+                        <span class="skill-tag google-tag"><i class="fas fa-table"></i> SQL</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-server"></i> MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Version Control & Build -->
+                <div class="skill-cat">
+                    <div class="cat-header"><i class="fas fa-tools google-yellow-txt"></i><h3>DevOps & Tools</h3></div>
+                    <div class="skills-tags">
+                        <span class="skill-tag google-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag google-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-cube"></i> Maven</span>
+                    </div>
+                </div>
+
+                <!-- IDEs & API -->
+                <div class="skill-cat">
+                    <div class="cat-header"><i class="fas fa-laptop-code google-blue-txt"></i><h3>IDEs & API Tools</h3></div>
+                    <div class="skills-tags">
+                        <span class="skill-tag google-tag"><i class="fas fa-code"></i> VS Code</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-desktop"></i> Eclipse</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-file-code"></i> Swagger</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-cat">
+                    <div class="cat-header"><i class="fas fa-users google-green-txt"></i><h3>Professional Skills</h3></div>
+                    <div class="skills-tags">
+                        <span class="skill-tag google-tag"><i class="fas fa-comments"></i> Communication</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-handshake"></i> Teamwork</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
+                        <span class="skill-tag google-tag"><i class="fas fa-clock"></i> Time Management</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title">My <span>Skills</span></h2>
-
-            <!-- Simplified skills grid: icon + name only -->
-            <div class="skills-grid">
-                <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
-                <div class="skill-item"><i class="fas fa-leaf"></i><span>Spring</span></div>
-                <div class="skill-item"><i class="fas fa-rocket"></i><span>Spring Boot</span></div>
-                <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
-                <div class="skill-item"><i class="fas fa-server"></i><span>MongoDB</span></div>
-                <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
-                <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span></div>
-                <div class="skill-item"><i class="fas fa-cube"></i><span>Maven</span></div>
-                <div class="skill-item"><i class="fas fa-code"></i><span>VS Code</span></div>
-                <div class="skill-item"><i class="fas fa-desktop"></i><span>Eclipse</span></div>
-                <div class="skill-item"><i class="fas fa-paper-plane"></i><span>Postman</span></div>
-                <div class="skill-item"><i class="fas fa-file-code"></i><span>Swagger</span></div>
-                <div class="skill-item"><i class="fas fa-vial"></i><span>JUnit</span></div>
-                <div class="skill-item"><i class="fas fa-comments"></i><span>Communication</span></div>
-                <div class="skill-item"><i class="fas fa-handshake"></i><span>Teamwork</span></div>
-                <div class="skill-item"><i class="fas fa-puzzle-piece"></i><span>Problem Solving</span></div>
-                <div class="skill-item"><i class="fas fa-clock"></i><span>Time Management</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
+    <!-- Projects Section (Added Angular Project) -->
     <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title">My <span>Projects</span></h2>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
+                <!-- Project 1: E-Commerce Backend -->
+                <div class="project-card google-card-hover">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4285F4, #EA4335);">
+                        <div class="image-placeholder"><i class="fas fa-shopping-cart"></i></div>
                     </div>
                     <div class="project-info">
                         <h3>E-Commerce Backend</h3>
-                        <p>A robust e-commerce backend system built with Spring Boot, featuring user authentication, product management, order processing, and payment integration.</p>
+                        <p>Scalable e-commerce REST API with JWT auth, product catalog, order processing, and payment simulation. Built with Spring Boot & MySQL.</p>
                         <div class="tech-used">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>MySQL</span>
-                            <span>REST API</span>
+                            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JWT</span><span>Swagger</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yourusername/ecommerce-backend" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
                             <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
+
+                <!-- Project 2: Task Management API -->
+                <div class="project-card google-card-hover">
+                    <div class="project-image" style="background: linear-gradient(135deg, #FBBC05, #34A853);">
+                        <div class="image-placeholder"><i class="fas fa-tasks"></i></div>
                     </div>
                     <div class="project-info">
-                        <h3>Authentication System</h3>
-                        <p>A secure authentication and authorization system with JWT tokens, role-based access control, and password encryption using Spring Security.</p>
+                        <h3>TaskFlow API</h3>
+                        <p>Full-featured task management backend with role-based access, real-time status, and MongoDB persistence. Integrated with Swagger docs.</p>
                         <div class="tech-used">
-                            <span>Spring Security</span>
-                            <span>JWT</span>
-                            <span>MySQL</span>
-                            <span>Java</span>
+                            <span>Spring Boot</span><span>MongoDB</span><span>JUnit</span><span>Postman</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yourusername/auth-system" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
                             <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-tasks"></i>
-                        </div>
+
+                <!-- Project 3: Angular + Spring Boot CRM (ANGULAR PROJECT) -->
+                <div class="project-card google-card-hover">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4285F4, #EA4335, #FBBC05);">
+                        <div class="image-placeholder"><i class="fab fa-angular"></i></div>
                     </div>
                     <div class="project-info">
-                        <h3>Task Management API</h3>
-                        <p>A RESTful API for task management with features like task creation, assignment, status tracking, and notifications using Spring Boot and MySQL.</p>
+                        <h3>Customer Compass | Angular + Spring</h3>
+                        <p>Full-stack CRM application: Angular frontend with reactive forms, HttpClient, and lazy loading. Spring Boot REST API with Spring Data JPA & MySQL. Features JWT auth & real-time dashboard.</p>
                         <div class="tech-used">
-                            <span>Spring Boot</span>
-                            <span>REST API</span>
-                            <span>MySQL</span>
-                            <span>Swagger</span>
+                            <span>Angular 17</span><span>Spring Boot</span><span>MySQL</span><span>JWT</span><span>Bootstrap</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/yourusername/task-api" target="_blank"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Frontend</a>
+                            <a href="#"><i class="fab fa-github"></i> Backend</a>
                         </div>
                     </div>
                 </div>
@@ -184,58 +207,40 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title">Contact <span>Me</span></h2>
+            <h2 class="section-title">Let's <span>Connect</span></h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new opportunities, creative projects, or just having a friendly chat about technology and software development.</p>
+                    <h3>Get In Touch</h3>
+                    <p>I'm actively looking for opportunities to collaborate on impactful projects. Whether you have a question or just want to say hi, I'll get back to you!</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>mnalin02@gmail.com</p>
-                            </div>
+                            <i class="fas fa-envelope google-red-txt"></i>
+                            <div><h4>Email</h4><p>mnalin02@gmail.com</p></div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91 6379342981</p>
-                            </div>
+                            <i class="fas fa-phone google-green-txt"></i>
+                            <div><h4>Phone</h4><p>+91 6379342981</p></div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Coimbatore, India</p>
-                            </div>
+                            <i class="fas fa-map-marker-alt google-yellow-txt"></i>
+                            <div><h4>Location</h4><p>Coimbatore, India</p></div>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary">Send Message</button>
+                <form class="contact-form google-form">
+                    <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+                    <div class="form-group"><input type="text" placeholder="Subject"></div>
+                    <div class="form-group"><textarea rows="5" placeholder="Your Message" required></textarea></div>
+                    <button type="submit" class="btn primary">Send Message <i class="fas fa-arrow-right"></i></button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="currentYear"></span> Nalinkumar Manikandan. All rights reserved.</p>
+            <p>© <span id="currentYear"></span> Nalinkumar Manikandan <i class="fas fa-heart" style="color:#EA4335;"></i></p>
             <div class="footer-links">
                 <a href="https://github.com/nalinmanikandan" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/nalinkumar-manikandan-9bb22b214/" target="_blank"><i class="fab fa-linkedin"></i></a>
